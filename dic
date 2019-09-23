@@ -1,0 +1,39 @@
+#!/data/data/com.termux/files/usr/bin/bash
+if [[ "$1" == '-p' ]];
+then
+	kk="$2"
+	kk1=${kk^}
+	echo $kk1
+	grep "$kk1  " ~/dic/dictionary.txt
+	grep "$kk1  " ~/dic/dictionary.txt | termux-tts-speak
+elif [[ "$1" == "-h" ]]
+then
+	echo 'USER MANUAL FOR Dictionary'
+	echo ''
+	echo 'Discription'
+	echo 'Termux-dictionary is a simple dictionary in which'
+	echo 'you can easily search words in english-english dictionary'
+	echo
+	echo 'USAGE '
+	echo 'options            *************'
+	echo 'dic [OPTION] word'
+	echo '-h     show this page and and exit.'
+	echo '-p     pronounce the whole word as well as'
+	echo '        meaning that matched.'
+	echo
+	echo '@AUTHER'
+	echo
+	echo 'Kkrishna'
+	echo
+	echo 'REPORT'
+	echo 'https://github.com/kkrishna7638/Termux-Dictionary'
+	
+else
+	kk="$1"
+	kk1=${kk^}
+	echo $kk1
+	grep "$kk1  " ~/dic/dictionary.txt	
+	
+fi	
+
+	
