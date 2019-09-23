@@ -10,9 +10,13 @@ Just copy the following command
 
 
 git clone https://github.com/kkrishna7638/Termux_Dictionary
+
 cd Termux_Dictionary 
+
 chmod +x dic
+
 chmod +x install.sh
+
 ./install.sh
 
 
