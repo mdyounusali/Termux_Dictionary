@@ -1,4 +1,4 @@
-#!$PREFIX/bin/bash
+#!/bin/bash
 
 chmod +x dic
 mkdir ~/.dic
