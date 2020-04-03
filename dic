@@ -1,4 +1,4 @@
-#!/data/data/com.termux/files/usr/bin/bash
+#!/bin/bash
 dict=~/.dic/dictionary.txt
 if [[ "$1" == '-p' ]];
 then
