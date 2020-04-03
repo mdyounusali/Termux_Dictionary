@@ -1,11 +1,12 @@
 #!/data/data/com.termux/files/usr/bin/bash
+dict=~/.dic/dictionary.txt
 if [[ "$1" == '-p' ]];
 then
 	kk="$2"
 	kk1=${kk^}
 	echo $kk1
-	grep "$kk1  " ~/dic/dictionary.txt
-	grep "$kk1  " ~/dic/dictionary.txt | termux-tts-speak
+	grep "$kk1  " $dict
+	grep "$kk1  " $dict | termux-tts-speak
 elif [[ "$1" == "-h" ]]
 then
 	echo 'USER MANUAL FOR Dictionary'
@@ -26,13 +27,13 @@ then
 	echo 'Kkrishna'
 	echo
 	echo 'REPORT'
-	echo 'https://github.com/kkrishna7638/Termux-Dictionary'
+	echo 'https://github.com/kcubeterm/Termux-Dictionary'
 	
 else
 	kk="$1"
 	kk1=${kk^}
 	echo $kk1
-	grep "$kk1  " ~/dic/dictionary.txt	
+	grep "$kk1  " $dict
 	
 fi	
 
